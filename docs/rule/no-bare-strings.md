@@ -2,6 +2,8 @@
 
 In order to be able to internationalize your application, you will need to avoid using plain strings in your templates. Instead, you would need to use a template helper specializing in translation ([ember-intl](https://github.com/ember-intl/ember-intl) is the recommended project to use this for).
 
+:wrench: The `--fix` option on the command line can automatically fix some of the problems reported by this rule.
+
 ## Examples
 
 This rule **forbids** the following:

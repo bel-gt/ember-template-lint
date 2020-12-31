@@ -51,6 +51,7 @@
   "devDependencies": {
     "@babel/parser": "^7.12.11",
     "@babel/traverse": "^7.12.12",
+    "camelcase": "^6.2.0",
     "common-tags": "^1.8.0",
     "eslint": "^7.16.0",
     "eslint-config-prettier": "^7.1.0",

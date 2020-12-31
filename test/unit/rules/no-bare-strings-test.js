@@ -142,6 +142,7 @@ generateRuleTests({
         line: 1,
         column: 3,
         source: 'Hello!',
+        isFixable: true,
       },
     },
     {
@@ -152,6 +153,7 @@ generateRuleTests({
         line: 1,
         column: 0,
         source: '\n howdy',
+        isFixable: true,
       },
     },
     {
@@ -162,6 +164,7 @@ generateRuleTests({
         line: 1,
         column: 5,
         source: '\n  1234\n',
+        isFixable: true,
       },
     },
 
@@ -173,6 +176,7 @@ generateRuleTests({
         line: 1,
         column: 3,
         source: 'hahaha trolol',
+        isFixable: true,
       },
     },
 
@@ -184,6 +188,7 @@ generateRuleTests({
         line: 1,
         column: 7,
         source: 'trolol',
+        isFixable: true,
       },
     },
 
@@ -195,6 +200,7 @@ generateRuleTests({
         line: 1,
         column: 7,
         source: 'hahaha trolol',
+        isFixable: true,
       },
     },
 
@@ -206,6 +212,7 @@ generateRuleTests({
         line: 1,
         column: 24,
         source: 'Contact, Policies and Legal',
+        isFixable: true,
       },
     },
 
@@ -217,6 +224,7 @@ generateRuleTests({
         line: 1,
         column: 38,
         source: 'Search for things',
+        isFixable: true,
       },
     },
 
@@ -228,6 +236,7 @@ generateRuleTests({
         line: 1,
         column: 19,
         source: 'slide',
+        isFixable: true,
       },
     },
 
@@ -240,6 +249,7 @@ generateRuleTests({
         line: 1,
         column: 19,
         source: 'Off',
+        isFixable: true,
       },
     },
 
@@ -252,6 +262,7 @@ generateRuleTests({
         line: 1,
         column: 5,
         source: 'derpy',
+        isFixable: true,
       },
     },
 
@@ -264,6 +275,7 @@ generateRuleTests({
         line: 1,
         column: 5,
         source: 'some alternate here',
+        isFixable: true,
       },
     },
 
@@ -276,12 +288,14 @@ generateRuleTests({
           line: 1,
           column: 5,
           source: 'Bady\n  ',
+          isFixable: true,
         },
         {
           message: 'Non-translated string used in `placeholder` attribute',
           line: 2,
           column: 9,
           source: 'trolol',
+          isFixable: true,
         },
       ],
     },
@@ -296,6 +310,7 @@ generateRuleTests({
           line: 1,
           column: 3,
           source: 'Y',
+          isFixable: true,
         },
       ],
     },
@@ -310,6 +325,7 @@ generateRuleTests({
           line: 1,
           column: 3,
           source: 'Z',
+          isFixable: true,
         },
       ],
     },

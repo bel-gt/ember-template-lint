@@ -201,7 +201,8 @@ describe('ember-template-lint executable', function () {
             1:4  error  Non-translated string used  no-bare-strings
             1:25  error  Non-translated string used  no-bare-strings
 
-          ✖ 2 problems (2 errors, 0 warnings)"
+          ✖ 2 problems (2 errors, 0 warnings)
+            2 errors and 0 warnings potentially fixable with the \`--fix\` option."
         `);
         expect(result.stderr).toMatchInlineSnapshot('""');
       });
@@ -261,7 +262,8 @@ describe('ember-template-lint executable', function () {
             1:4  error  Non-translated string used  no-bare-strings
             1:25  error  Non-translated string used  no-bare-strings
 
-          ✖ 2 problems (2 errors, 0 warnings)"
+          ✖ 2 problems (2 errors, 0 warnings)
+            2 errors and 0 warnings potentially fixable with the \`--fix\` option."
         `);
         expect(result.stderr).toMatchInlineSnapshot('""');
       });
@@ -293,7 +295,8 @@ describe('ember-template-lint executable', function () {
             1:4  error  Non-translated string used  no-bare-strings
             1:25  error  Non-translated string used  no-bare-strings
 
-          ✖ 2 problems (2 errors, 0 warnings)"
+          ✖ 2 problems (2 errors, 0 warnings)
+            2 errors and 0 warnings potentially fixable with the \`--fix\` option."
         `);
         expect(result.stderr).toBeFalsy();
       });
@@ -512,6 +515,7 @@ describe('ember-template-lint executable', function () {
           '  1:25  error  Non-translated string used  no-bare-strings',
           '',
           '✖ 2 problems (2 errors, 0 warnings)',
+          '  2 errors and 0 warnings potentially fixable with the `--fix` option.',
         ]);
         expect(result.stderr).toBeFalsy();
       });
@@ -548,6 +552,7 @@ describe('ember-template-lint executable', function () {
           '  1:53  warning  HTML comment detected  no-html-comments',
           '',
           '✖ 3 problems (2 errors, 1 warnings)',
+          '  2 errors and 0 warnings potentially fixable with the `--fix` option.',
         ]);
         expect(result.stderr).toBeFalsy();
       });
@@ -760,6 +765,7 @@ describe('ember-template-lint executable', function () {
           '  1:24  error  Non-translated string used  no-bare-strings',
           '',
           '✖ 2 problems (2 errors, 0 warnings)',
+          '  2 errors and 0 warnings potentially fixable with the `--fix` option.',
         ]);
         expect(result.stderr).toBeFalsy();
       });
@@ -874,7 +880,8 @@ describe('ember-template-lint executable', function () {
   1:24  error  Non-translated string used  no-bare-strings
   1:53  error  HTML comment detected  no-html-comments
 
-✖ 3 problems (3 errors, 0 warnings)`
+✖ 3 problems (3 errors, 0 warnings)
+  2 errors and 0 warnings potentially fixable with the \`--fix\` option.`
         );
 
         expect(result.stderr).toBeFalsy();
@@ -912,6 +919,7 @@ describe('ember-template-lint executable', function () {
             rule: 'no-bare-strings',
             severity: 2,
             source: 'Here too!!',
+            isFixable: true,
           },
           {
             column: 25,
@@ -922,6 +930,7 @@ describe('ember-template-lint executable', function () {
             rule: 'no-bare-strings',
             severity: 2,
             source: 'Bare strings are bad...',
+            isFixable: true,
           },
         ];
 
@@ -1004,6 +1013,7 @@ describe('ember-template-lint executable', function () {
             rule: 'no-bare-strings',
             severity: 2,
             source: 'Here too!!',
+            isFixable: true,
           },
           {
             column: 24,
@@ -1014,6 +1024,7 @@ describe('ember-template-lint executable', function () {
             rule: 'no-bare-strings',
             severity: 2,
             source: 'Bare strings are bad...',
+            isFixable: true,
           },
         ];
 
@@ -1125,6 +1136,7 @@ describe('ember-template-lint executable', function () {
             '  1:39  error  Non-translated string used  no-bare-strings',
             '',
             '✖ 2 problems (2 errors, 0 warnings)',
+            '  2 errors and 0 warnings potentially fixable with the `--fix` option.',
           ]);
           expect(result.stderr).toBeFalsy();
         });
@@ -1156,6 +1168,7 @@ describe('ember-template-lint executable', function () {
             '  1:39  error  Non-translated string used  no-bare-strings',
             '',
             '✖ 2 problems (2 errors, 0 warnings)',
+            '  2 errors and 0 warnings potentially fixable with the `--fix` option.',
           ]);
           expect(result.stderr).toBeFalsy();
         });
@@ -1356,6 +1369,7 @@ describe('ember-template-lint executable', function () {
           '  1:53  warning  HTML comment detected  no-html-comments',
           '',
           '✖ 3 problems (2 errors, 1 warnings)',
+          '  2 errors and 0 warnings potentially fixable with the `--fix` option.',
           '::error file=app/templates/application.hbs,line=1,col=4::Non-translated string used',
           '::error file=app/templates/application.hbs,line=1,col=24::Non-translated string used',
           '::warning file=app/templates/application.hbs,line=1,col=53::HTML comment detected',
@@ -1397,6 +1411,7 @@ describe('ember-template-lint executable', function () {
             '  1:24  error  Non-translated string used  no-bare-strings',
             '',
             '✖ 2 problems (2 errors, 0 warnings)',
+            '  2 errors and 0 warnings potentially fixable with the `--fix` option.',
             '::error file=app/templates/application.hbs,line=1,col=4::Non-translated string used',
             '::error file=app/templates/application.hbs,line=1,col=24::Non-translated string used',
           ]);

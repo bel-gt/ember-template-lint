@@ -435,6 +435,7 @@ describe('public api', function () {
           source: 'Here too!!',
           rule: 'no-bare-strings',
           severity: 2,
+          isFixable: true,
         },
         {
           message: 'Non-translated string used',
@@ -445,6 +446,7 @@ describe('public api', function () {
           source: 'Bare strings are bad...',
           rule: 'no-bare-strings',
           severity: 2,
+          isFixable: true,
         },
       ];
 
@@ -553,6 +555,7 @@ describe('public api', function () {
         source: 'bare string',
         rule: 'no-bare-strings',
         severity: 1,
+        isFixable: true,
       };
 
       expect(result).toEqual([expected]);
@@ -584,6 +587,7 @@ describe('public api', function () {
           source: 'bare string',
           rule: 'no-bare-strings',
           severity: 2,
+          isFixable: true,
         },
         {
           message:
@@ -716,6 +720,7 @@ describe('public api', function () {
           line: 1,
           column: 5,
           source: 'bare string ',
+          isFixable: true,
         },
       ];
 
@@ -907,6 +912,7 @@ describe('public api', function () {
           rule: 'no-bare-strings',
           severity: 1,
           source: 'Bare strings are bad',
+          isFixable: true,
         },
         {
           message:
